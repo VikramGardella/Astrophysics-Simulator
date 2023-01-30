@@ -5,7 +5,7 @@
 
 using namespace std;
 
-void calcGravPullVectorComps(tangibleObject objA, tangibleObject objB) {
+void calcGravPullVectorComps(tangibleObject* objA, tangibleObject* objB) {//pointers done right ("reference/dereference variable"-ing and whatnot?)
 	//F = G*(M1*M2)/R^2
 
 
