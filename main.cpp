@@ -38,21 +38,25 @@ int main() {
 	This is science bois, wise up, eh? Pitter patter, let's make some planets.
 	*/
 
+
+//initializing a "vector" (1-Dimensional/linear data structure that is dynamically resizing)
 	vector<tangibleObject> allMatter;
 
+//"instantiating" some test "astronomical beings"
 	tangibleObject planetAlpha = tangibleObject(100000, -100, 0, 200, 0, 0, 0);
 	tangibleObject planetBeta = tangibleObject(50000, 100, 150, -75, 0, 0, 0);
 	tangibleObject planetOmega = tangibleObject(200000, 100, 100, 100, 0, 0, 0);
-	tangibleObject planetLigma = tangibleObject(400000, -800, -200, 600, 0, 0, 0);
+	tangibleObject planetDelta = tangibleObject(400000, -800, -200, 600, 0, 0, 0);
 
+	tangibleObject starZeta = tangibleObject(10000000, 0, 0, 0, 0, 0, 0);
+
+//adding those objects to that globally-accessible vector
 	allMatter.push_back(planetAlpha);
 	allMatter.push_back(planetBeta);
 	allMatter.push_back(planetOmega);
-	allMatter.push_back(planetLigma);
+	allMatter.push_back(planetDelta);
 
-	/*
-	Noice. It works. Okay, this is a good stopping point. Hope you enjoyed or learned something.
-	*/
+	allMatter.push_back(starZeta);
 
 
 	return 0;
